@@ -2,7 +2,7 @@
 #
 # This lets you adjust df output for samba shares
 # (i.e. for artificially limiting free space for a 
-# particular share) in conjunction withi "dfree command" in
+# particular share) in conjunction with "dfree command" in
 # smb.conf
 
 # Comes in very handy if you have your shares on a big
@@ -19,8 +19,8 @@
 #
 # \w*-\d{1,}[mgt] 
 #
-# where $1 is any name you want, $2 the wished max size reported
-# and $3 the IEC unit of $2 (mebi-, gibi-, tebibyte)
+# where $1 is any name you want, $2 the desired max. size to be 
+# reported and $3 the IEC unit of $2 (mebi-, gibi-, tebibyte).
 
 # or
 # - pass maxsize/unit in $2 in the same format as above
