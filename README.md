@@ -17,9 +17,13 @@ In theory, you could also have samba report bigger sizes than the backing
 partition of a particular share - and in some situations, for some braindead 
 SW this might come in handy (the interwebs do tell tales of this).
 
-To prevent samba reporting a usage larger than the custom total size all of
-a sudden, this script will check the usage of the according path with the
-help of du.
+To prevent samba reporting a usage larger than the custom maximum size 
+(i.e. your artificially set maximum size is lower than the space already
+occupied on the filesystem) all of a sudden, this script will check the 
+usage of the according path with the help of du and calculate the
+artificial free space. This is a potentially time-consuming operation,
+hence it is highlighted here. Please report if you're encountering issues
+with this.
 
 Usage
 =====
